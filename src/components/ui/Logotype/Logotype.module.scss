@@ -1,0 +1,7 @@
+@import "src/styles/templates";
+
+a.logo {
+  svg {
+    @include svgMonofill(curentColor);
+  }
+}

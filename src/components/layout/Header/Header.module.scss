@@ -1,0 +1,12 @@
+@import "src/styles/templates";
+
+header.appHeader {
+  font-size: 1rem; // 1em = 20px
+
+  .container {
+    @apply px-[1.6em] py-[.6em] bg-primary-bg
+            flex justify-between;
+
+    border-radius: toLocalEm(8, 20);
+  }
+}
