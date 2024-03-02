@@ -40,6 +40,8 @@ const CoreLayout: FC<PropsWith<'children', CoreLayoutProps>> = ({
         }}
         aria-hidden
         priority={true}
+        width={2880}
+        height={1620}
       />
 
       <Header />
