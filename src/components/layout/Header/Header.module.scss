@@ -5,7 +5,7 @@ header.appHeader {
 
   .container {
     @apply px-[1.6em] py-[.6em] bg-primary-bg
-            flex justify-between;
+            flex justify-between items-center;
 
     border-radius: toLocalEm(8, 20);
   }

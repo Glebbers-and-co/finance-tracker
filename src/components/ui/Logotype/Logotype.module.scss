@@ -1,6 +1,10 @@
 @import "src/styles/templates";
 
 a.logo {
+  // 1em = 16px
+
+  gap: toLocalEm(8, 16);
+
   svg {
     @include svgMonofill(curentColor);
   }

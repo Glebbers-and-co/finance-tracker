@@ -13,7 +13,7 @@ const Logotype: VariableFC<typeof Link, LogotypeProps, 'children' | 'href'> = ({
     <Link
       href={'/'}
       className={cn(
-        'select-none font-semibold flex gap-[.4em] items-center',
+        'select-none font-semibold flex items-center',
         styles.logo,
         className,
       )}

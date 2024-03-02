@@ -1,3 +1,5 @@
+@import "src/styles/templates";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,4 +8,8 @@
   @apply text-primary-font;
 
   font-size: 20px;
+}
+
+* svg, svg {
+  @include svgMonofill(curentColor);
 }

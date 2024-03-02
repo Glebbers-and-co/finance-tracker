@@ -1,0 +1,14 @@
+@import "src/styles/templates";
+
+a.navItem {
+  padding:
+          toLocalEm(8, 16)
+          toLocalEm(16, 16)
+  ;
+  transition: .15s ease;
+  border-radius: toLocalEm(8, 16);
+
+  &:hover, &.active {
+    @apply bg-secondary-bg text-secondary-font;
+  }
+}

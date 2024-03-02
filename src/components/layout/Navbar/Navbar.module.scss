@@ -1,0 +1,19 @@
+@import "src/styles/templates";
+
+nav.appNav {
+  // 1em = 16px
+
+  ul {
+    gap: toLocalEm(24, 16);
+
+    li a {
+      @apply flex-center;
+
+      gap: toLocalEm(8, 16);
+
+      svg {
+        @include svgMonofill(currentColor);
+      }
+    }
+  }
+}

@@ -12,9 +12,9 @@ const Header: FC<HeaderProps> = () => {
   return (
     <header className={cn(styles.appHeader)}>
       <UiContainer as={'div'} className={cn(styles.container)}>
-        <Navbar />
+        <Navbar className={cn('text-[.8em]')} />
 
-        <Logotype />
+        <Logotype className={cn('text-[.8em]')} />
       </UiContainer>
     </header>
   );
