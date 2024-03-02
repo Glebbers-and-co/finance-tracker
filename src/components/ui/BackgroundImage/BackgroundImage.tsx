@@ -18,13 +18,14 @@ const BackgroundImage: VariableFC<
   typeof Image,
   BackgroundImageProps,
   'children'
-> = ({ className, objectFit = 'cover', ...props }) => {
+> = ({ className, objectFit = 'cover', style, ...props }) => {
   return (
     <Image
       className={cn('z-[-2]', className)}
       {...props}
       style={{
         objectFit,
+        ...style,
       }}
     />
   );
