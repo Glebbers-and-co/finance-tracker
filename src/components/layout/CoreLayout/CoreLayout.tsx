@@ -4,7 +4,7 @@ import cn from 'classnames';
 
 import Footer from '@/src/components/layout/Footer/Footer';
 import Header from '@/src/components/layout/Header/Header';
-import bgImage from '@/public/backgrounds/1614320957_69-p-foto-raduzhnogo-fona-89.jpg';
+import bgImage from '@/public/backgrounds/image 2.png';
 
 import styles from './CoreLayout.module.scss';
 import type { CoreLayoutProps } from './CoreLayout.props';

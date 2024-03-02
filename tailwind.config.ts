@@ -16,8 +16,15 @@ const tailwindConfig: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        // Example
-        // 'bg-primary': 'red',
+        primary: {
+          bg: '#FFFFFF',
+          font: '#04285C',
+        },
+
+        secondary: {
+          bg: '#006AA4',
+          font: '#FFF',
+        },
       },
     },
   },

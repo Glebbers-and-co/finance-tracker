@@ -3,5 +3,7 @@
 @tailwind utilities;
 
 :root {
+  @apply text-secondary-font;
+
   font-size: 20px;
 }
