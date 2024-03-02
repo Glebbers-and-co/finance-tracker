@@ -2,7 +2,6 @@ import { PropsWith } from '@xenopomp/advanced-types';
 import { FC } from 'react';
 import cn from 'classnames';
 
-import Footer from '@/src/components/layout/Footer/Footer';
 import Header from '@/src/components/layout/Header/Header';
 import bgImage from '@/public/backgrounds/image 2.png';
 

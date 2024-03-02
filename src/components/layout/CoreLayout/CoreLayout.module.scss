@@ -1,7 +1,9 @@
 @import "src/styles/templates";
 
 .layoutWrapper {
-  @apply fixed top-0 left-0 py-[1.2rem] gap-[1.2rem];
+  @apply fixed top-0 left-0 gap-[1.2rem];
+
+  @include paddingVertical(toLocalEm(16, 20));
 
   height: 100dvh;
   width: 100%;
