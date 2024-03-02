@@ -4,8 +4,11 @@ header.appHeader {
   font-size: 1rem; // 1em = 20px
 
   .container {
-    @apply px-[1.6em] py-[.6em] bg-primary-bg
+    @apply bg-primary-bg
             flex justify-between items-center;
+
+    @include paddingVertical(toLocalEm(8, 20));
+    @include paddingHorizontal(toLocalEm(24, 20));
 
     border-radius: toLocalEm(8, 20);
   }
