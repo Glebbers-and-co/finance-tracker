@@ -48,7 +48,7 @@ const CoreLayout: FC<PropsWith<'children', CoreLayoutProps>> = ({
 
       {children}
 
-      <Footer />
+      {/*<Footer />*/}
     </div>
   );
 };

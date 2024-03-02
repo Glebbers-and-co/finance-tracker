@@ -1,5 +1,7 @@
+@import "src/styles/templates";
+
 .layoutWrapper {
-  @apply fixed top-0 left-0;
+  @apply fixed top-0 left-0 py-[1.2rem] gap-[1.2rem];
 
   height: 100dvh;
   width: 100%;
