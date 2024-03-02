@@ -35,7 +35,6 @@ module.exports = {
     'scss/at-mixin-pattern': CAMEL_CASE,
     'scss/dollar-variable-pattern': CAMEL_CASE,
     'scss/percent-placeholder-pattern': CAMEL_CASE,
-    'function-name-case': CAMEL_CASE,
 
     'scss/no-global-function-names': null,
     'at-rule-no-unknown': null,
