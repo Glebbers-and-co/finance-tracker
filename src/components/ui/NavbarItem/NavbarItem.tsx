@@ -1,5 +1,5 @@
-import cn from 'classnames';
 import { VariableFC } from '@xenopomp/advanced-types';
+import cn from 'classnames';
 import Link from 'next/link';
 
 import styles from './NavbarItem.module.scss';

@@ -3,8 +3,8 @@ import cn from 'classnames';
 
 import NavbarItem from '@/src/components/ui/NavbarItem/NavbarItem';
 
-import { NavbarProps } from './Navbar.props';
 import styles from './Navbar.module.scss';
+import { NavbarProps } from './Navbar.props';
 
 const Navbar: VariableFC<'nav', NavbarProps, 'children'> = ({
   className,

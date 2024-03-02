@@ -1,13 +1,13 @@
 import { PropsWith } from '@xenopomp/advanced-types';
-import { FC } from 'react';
 import cn from 'classnames';
+import { FC } from 'react';
 
-import Header from '@/src/components/layout/Header/Header';
 import bgImage from '@/public/backgrounds/image 2.png';
+import Header from '@/src/components/layout/Header/Header';
+import BackgroundImage from '@/src/components/ui/BackgroundImage/BackgroundImage';
 
 import styles from './CoreLayout.module.scss';
 import type { CoreLayoutProps } from './CoreLayout.props';
-import BackgroundImage from '@/src/components/ui/BackgroundImage/BackgroundImage';
 
 /**
  * Wrapper for core layout. Provides access to fully manageable
