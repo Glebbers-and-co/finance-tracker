@@ -1,0 +1,9 @@
+.layoutWrapper {
+  @apply flex flex-col;
+
+  min-height: 100dvh;
+
+  main {
+    flex-grow: 1;
+  }
+}
