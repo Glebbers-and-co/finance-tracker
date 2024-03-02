@@ -32,13 +32,14 @@ const CoreLayout: FC<PropsWith<'children', CoreLayoutProps>> = ({
   return (
     <div className={cn(styles.layoutWrapper)}>
       <BackgroundImage
-        className={cn('absolute top-0 left-0 w-full h-full')}
+        className={cn('absolute top-0 left-0 w-full h-full select-none')}
         src={bgImage}
         alt={'Background'}
         style={{
           objectPosition: 'center bottom',
         }}
         aria-hidden
+        priority={true}
       />
 
       <Header />
