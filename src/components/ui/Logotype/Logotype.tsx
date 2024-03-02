@@ -12,11 +12,7 @@ const Logotype: VariableFC<typeof Link, LogotypeProps, 'children' | 'href'> = ({
   return (
     <Link
       href={'/'}
-      className={cn(
-        'select-none font-semibold flex items-center',
-        styles.logo,
-        className,
-      )}
+      className={cn('select-none flex items-center', styles.logo, className)}
       {...props}
     >
       Наш Банк Онлайн
