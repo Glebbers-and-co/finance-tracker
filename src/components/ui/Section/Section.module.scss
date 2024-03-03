@@ -1,0 +1,17 @@
+@import "src/styles/templates";
+
+section.uiSection {
+  @apply flex flex-col;
+
+  gap: toLocalEm(16, 20);
+
+  header.sectionHeader {
+    @apply flex items-center justify-between;
+
+    gap: toLocalEm(16, 20);
+  }
+
+  @include endAtFixed($mobileBreakpoint) {
+    gap: toLocalEm(8, 20);
+  }
+}
