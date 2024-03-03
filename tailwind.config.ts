@@ -23,6 +23,7 @@ const tailwindConfig: Config = {
 
         secondary: {
           bg: '#006AA4',
+          accent: '#86AADE',
           font: '#FFF',
         },
       },
