@@ -9,10 +9,14 @@ import { NavbarProps } from './Navbar.props';
 
 const Navbar: VariableFC<'nav', NavbarProps, 'children'> = ({
   className,
+  expanded,
   ...props
 }) => {
   return (
-    <nav className={cn(styles.appNav, className)} {...props}>
+    <nav
+      className={cn(styles.appNav, expanded && styles.expanded, className)}
+      {...props}
+    >
       <ul className={cn('flex')}>
         <li>
           <NavbarItem href={'/cards'}>

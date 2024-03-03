@@ -20,4 +20,19 @@
 
     grid-column: 2 / span calc($cols - 2);
   }
+
+  @include endAtFixed($mobileBreakpoint) {
+    grid-column: 1 / span var(--cols-count);
+
+    @include paddingVertical(toLocalEm(24, 20));
+
+    @apply pl-[.4em] pr-[.8em];
+
+    .scrollable {
+      grid-column: 1 / span var(--cols-count) !important;
+
+      padding-right: .4em;
+      margin-right: -.4em;
+    }
+  }
 }

@@ -28,7 +28,6 @@ module.exports = {
     'declaration-block-no-duplicate-properties': WITH_ERROR,
     'no-duplicate-selectors': WITH_ERROR,
     'comment-no-empty': WITH_ERROR,
-    'declaration-no-important': WITH_ERROR,
 
     'selector-class-pattern': CAMEL_CASE,
     'scss/at-function-pattern': CAMEL_CASE,
@@ -40,6 +39,8 @@ module.exports = {
     'at-rule-no-unknown': null,
     'scss/at-rule-no-unknown': null,
     'no-empty-source': null,
+    'at-rule-empty-line-before': null,
+    'declaration-empty-line-before': null,
   },
   defaultSeverity: 'warning',
   plugins: ['stylelint-scss'],

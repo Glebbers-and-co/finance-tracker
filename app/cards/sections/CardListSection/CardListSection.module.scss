@@ -19,5 +19,14 @@ section.cardListSection {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+
+    @include endAtFixed($mobileBreakpoint) {
+      grid-template-columns: 1fr;
+      gap: toLocalEm(8, 20);
+    }
+  }
+
+  @include endAtFixed($mobileBreakpoint) {
+    gap: toLocalEm(8, 20);
   }
 }

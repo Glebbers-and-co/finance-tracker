@@ -4,18 +4,18 @@ import { CSSProperties, FC } from 'react';
 
 import UiContainer from '@/src/components/ui/UiContainer/UiContainer';
 
+import styles from './UiGrid.module.scss';
 import type { UiGridProps } from './UiGrid.props';
 
 interface UiGridNestedProps
   extends PropsWith<'children' | 'className' | 'id' | 'style', UiGridProps> {}
 
 const getInlineStyles = ({
-  columns,
   rows,
   gap,
-}: Pick<UiGridNestedProps, 'columns' | 'rows' | 'gap'>): CSSProperties => {
+}: Pick<UiGridNestedProps, 'rows' | 'gap'>): CSSProperties => {
   return {
-    gridTemplateColumns: `repeat(${columns}, 1fr)`,
+    gridTemplateColumns: `repeat(var(--cols-count), 1fr)`,
     gridTemplateRows: `repeat(${rows}, 1fr)`,
     gap,
     display: 'grid',
@@ -35,11 +35,11 @@ const UiGrid: FC<UiGridNestedProps> = ({
 }) => {
   return (
     <UiContainer
-      className={cn(className)}
+      className={cn(styles.grid, className)}
       id={id}
       style={
         {
-          ...getInlineStyles({ columns, rows, gap }),
+          ...getInlineStyles({ rows, gap }),
 
           // Provide column count via variables
           '--cols-count': columns,
