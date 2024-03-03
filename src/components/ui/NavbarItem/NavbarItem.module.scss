@@ -12,8 +12,15 @@ a.navItem {
   border-width: 1px;
   border-style: solid;
 
+  @include desktopHover {
+    @apply border-secondary-accent;
+
+    border-width: 1px;
+    border-style: solid;
+  }
+
   &:hover:not(.active) {
-    @extend %withAccentBorder;
+    // @extend %withAccentBorder;
   }
 
   &.active {
