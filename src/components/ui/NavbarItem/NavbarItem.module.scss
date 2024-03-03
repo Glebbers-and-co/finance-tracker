@@ -1,14 +1,22 @@
 @import "src/styles/templates";
 
 a.navItem {
+  @apply border-transparent;
+
   padding:
           toLocalEm(8, 16)
           toLocalEm(16, 16)
   ;
   transition: .15s ease;
   border-radius: toLocalEm(8, 16);
+  border-width: 1px;
+  border-style: solid;
 
-  &:hover, &.active {
+  &:hover:not(.active) {
+    @apply border-secondary-accent;
+  }
+
+  &.active {
     @apply bg-secondary-bg text-secondary-font;
   }
 }
