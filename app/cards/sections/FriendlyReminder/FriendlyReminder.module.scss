@@ -1,10 +1,6 @@
 @import "src/styles/templates";
 
 section.reminder {
-  @apply flex flex-col;
-
-  gap: toLocalEm(16, 20);
-
   article.message {
     @extend %fancyCard;
 

@@ -1,18 +1,8 @@
 @import "src/styles/templates";
 
 section.cardListSection {
-  @apply flex flex-col;
-
-  gap: toLocalEm(16, 20);
-
   svg {
     @include svgMonofill(currentColor);
-  }
-
-  header.sectionHeader {
-    @apply flex items-center justify-between;
-
-    gap: toLocalEm(16, 20);
   }
 
   article.cardGrid {
@@ -24,9 +14,5 @@ section.cardListSection {
       grid-template-columns: 1fr;
       gap: toLocalEm(8, 20);
     }
-  }
-
-  @include endAtFixed($mobileBreakpoint) {
-    gap: toLocalEm(8, 20);
   }
 }
