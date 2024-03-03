@@ -13,32 +13,7 @@ export default function Home() {
     <>
       <PageHeader icon={'Card'}>Мои финансы</PageHeader>
 
-      <PageBody>
-        <p>Sus</p>
-        <p>Sus</p>
-        <p>Sus</p>
-        <p>Sus</p>
-        <p>Sus</p>
-        <p>Sus</p>
-        <p>Sus</p>
-        <p>Sus</p>
-        <p>Sus</p>
-        <p>Sus</p>
-        <p>Sus</p>
-        <p>Sus</p>
-        <p>Sus</p>
-        <p>Sus</p>
-        <p>Sus</p>
-        <p>Sus</p>
-        <p>Sus</p>
-        <p>Sus</p>
-        <p>Sus</p>
-        <p>Sus</p>
-        <p>Sus</p>
-        <p>Sus</p>
-        <p>Sus</p>
-        <p>Sus</p>
-      </PageBody>
+      <PageBody>Page content here</PageBody>
     </>
   );
 }
