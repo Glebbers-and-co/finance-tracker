@@ -8,6 +8,8 @@ section.reminder {
   article.message {
     @extend %fancyCard;
 
+    @apply bg-primary-bg;
+
     font-size: toLocalEm(16, 20); // 1em = 16px
 
     @include paddingVertical(toLocalEm(16, 16));
