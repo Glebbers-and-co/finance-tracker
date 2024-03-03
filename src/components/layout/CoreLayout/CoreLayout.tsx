@@ -49,7 +49,6 @@ const CoreLayout: FC<PropsWith<'children', CoreLayoutProps>> = ({
       <UiGrid
         as={'main'}
         style={{
-          gridTemplateColumns: '1fr var(--cols-resolution) 1fr',
           gridTemplateRows: 'max-content 1fr',
           gridRowGap: 0,
         }}

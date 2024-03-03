@@ -1,0 +1,22 @@
+@import "src/styles/templates";
+
+.pageBody {
+  @extend %scrollable;
+
+  @apply bg-primary-bg;
+
+  $br: .4rem;
+  $cols: calc(var(--cols-count) - 2);
+
+  border-radius: 0 0 $br $br;
+  display: grid;
+  grid-column: 2 / span $cols;
+  grid-gap: inherit;
+  grid-template-columns: repeat($cols, 1fr);
+
+  section.scrollable {
+    @apply bg-red-300/25;
+
+    grid-column: 2 / span calc($cols - 2);
+  }
+}

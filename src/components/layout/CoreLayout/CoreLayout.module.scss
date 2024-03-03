@@ -9,5 +9,9 @@
   width: 100%;
   overflow: hidden;
   display: grid;
-  grid-template-rows: max-content 1fr max-content;
+  grid-template-rows: max-content 1fr;
+
+  main {
+    overflow: hidden;
+  }
 }

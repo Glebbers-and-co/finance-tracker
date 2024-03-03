@@ -42,7 +42,7 @@ const UiGrid: FC<UiGridNestedProps> = ({
           ...getInlineStyles({ columns, rows, gap }),
 
           // Provide column count via variables
-          '--cols-resolution': `${columns}fr`,
+          '--cols-count': columns,
 
           ...style,
         } as CSSProperties

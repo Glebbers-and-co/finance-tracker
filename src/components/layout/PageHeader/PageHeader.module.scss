@@ -7,9 +7,10 @@ header.pageHeader {
           bg-secondary-bg text-secondary-font;
 
   font-size: toLocalEm(24, 20); // 1em = 24px
-  grid-column-start: 2;
   gap: toLocalEm(12, 24);
   border-radius: $br $br 0 0;
+
+  grid-column: 2 / span calc(var(--cols-count) - 2);
 
   @include paddingHorizontal(toLocalEm(40, 24));
   @include paddingVertical(toLocalEm(24, 24));
