@@ -25,7 +25,10 @@ const CardListSection: VariableFC<
       </header>
 
       <article className={cn(styles.cardGrid)}>
-        <Card value={1488.5} />
+        <Card value={1488.5} title={'Зарплатная карта'} />
+        <Card value={1488.5} title={'Кредитная карта'} />
+        <Card value={1488.5} title={'Смешная карта'} />
+        <Card value={1488.5} title={'Чёрная карта'} />
       </article>
     </section>
   );

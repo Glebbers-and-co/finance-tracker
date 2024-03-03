@@ -6,7 +6,7 @@ import { IconKit } from '@/src/components/icons/icon-kit';
 import styles from './Card.module.scss';
 import type { CardProps } from './Card.props';
 
-const Card: FC<CardProps> = ({ icon = 'Card', value }) => {
+const Card: FC<CardProps> = ({ icon = 'Card', value, title }) => {
   const Icon = IconKit[icon];
 
   const [roubles, copeikas] = value.toString().split(/\./gi);
@@ -29,13 +29,15 @@ const Card: FC<CardProps> = ({ icon = 'Card', value }) => {
 
   return (
     <div className={cn(styles.card)}>
-      <div>
+      <div className={cn('flex flex-col gap-[.625em]')}>
         <strong>
           {roubles},
           <span className={cn('text-secondary-accent')}>
             {formatCopeikas()} ₽
           </span>
         </strong>
+
+        {title && <p className={cn('font-light')}>{title}</p>}
       </div>
 
       <Icon width={32} height={32} />
