@@ -4,7 +4,7 @@ import { FC } from 'react';
 
 import Header from '@/src/components/layout/Header/Header';
 import BackgroundImage from '@/src/components/ui/BackgroundImage/BackgroundImage';
-import bgImage from '@/src/images/backgrounds/background-simple.png';
+import bgImage from '@/src/images/backgrounds/image 2.svg';
 
 import styles from './CoreLayout.module.scss';
 import type { CoreLayoutProps } from './CoreLayout.props';
@@ -39,8 +39,8 @@ const CoreLayout: FC<PropsWith<'children', CoreLayoutProps>> = ({
         }}
         aria-hidden
         priority={true}
-        // width={2880}
-        // height={1620}
+        width={1920}
+        height={1078.96}
       />
 
       <Header />
