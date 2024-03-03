@@ -12,9 +12,13 @@ const Header: FC<HeaderProps> = () => {
   return (
     <header className={cn(styles.appHeader)}>
       <UiContainer as={'div'} className={cn(styles.container, 'select-none')}>
-        <Navbar className={cn('text-[.8em]')} />
+        <section className={cn(styles.main)}>
+          <Navbar className={cn('text-[.8em]')} />
 
-        <Logotype className={cn('text-[.8em]')} />
+          <Logotype className={cn('text-[.8em]')} />
+        </section>
+
+        <div aria-hidden className={cn(styles.separator)}></div>
       </UiContainer>
     </header>
   );

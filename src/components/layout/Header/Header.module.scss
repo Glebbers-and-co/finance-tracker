@@ -6,12 +6,40 @@ header.appHeader {
   .container {
     @extend %withAccentBorder;
 
-    @apply bg-primary-bg
-            flex justify-between items-center;
+    @apply bg-primary-bg;
 
     @include paddingVertical(toLocalEm(8, 20));
     @include paddingHorizontal(toLocalEm(24, 20));
 
     border-radius: toLocalEm(8, 20);
+
+    section.main {
+      @apply flex justify-between items-center;
+    }
+
+    .separator {
+      @apply mx-auto my-[.4em] bg-secondary-accent;
+
+      height: 2px;
+      width: min(100px, 100%);
+      display: none;
+    }
+
+    @include endAtFixed($mobileBreakpoint) {
+      --margin: 0 !important;
+
+      border-radius: 0 0 toLocalEm(8, 20) toLocalEm(8, 20);
+      padding:
+              toLocalEm(16, 20)
+              toLocalEm(16, 20)
+              0;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+
+      .separator {
+        display: block;
+      }
+    }
   }
 }
