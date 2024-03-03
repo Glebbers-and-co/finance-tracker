@@ -15,19 +15,19 @@ const Navbar: VariableFC<'nav', NavbarProps, 'children'> = ({
     <nav className={cn(styles.appNav, className)} {...props}>
       <ul className={cn('flex')}>
         <li>
-          <NavbarItem href={'/'}>
+          <NavbarItem href={'/cards'}>
             <IconKit.Card /> Карты
           </NavbarItem>
         </li>
 
         <li>
-          <NavbarItem href={'/'}>
+          <NavbarItem href={'/history'}>
             <IconKit.Money /> Траты
           </NavbarItem>
         </li>
 
         <li>
-          <NavbarItem href={'/'}>
+          <NavbarItem href={'/window'}>
             <IconKit.Elephant /> Окно
           </NavbarItem>
         </li>
