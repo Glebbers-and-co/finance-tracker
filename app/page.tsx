@@ -4,13 +4,13 @@ import PageHeader from '@/src/components/layout/PageHeader/PageHeader';
 import { generateStaticMetadata } from '@/src/utils/seo';
 
 export const metadata: Metadata = generateStaticMetadata({
-  title: 'Main',
+  title: 'Мои финансы',
 });
 
 export default function Home() {
   return (
     <>
-      <PageHeader />
+      <PageHeader icon={'Card'}>Мои финансы</PageHeader>
     </>
   );
 }

@@ -1,11 +1,24 @@
 import cn from 'classnames';
 import { FC } from 'react';
 
+import { IconKit } from '@/src/components/icons/icon-kit';
+
 import styles from './PageHeader.module.scss';
 import type { PageHeaderProps } from './PageHeader.props';
 
-const PageHeader: FC<PageHeaderProps> = ({}) => {
-  return <header className={cn(styles.pageHeader)}>Header</header>;
+const PageHeader: FC<PageHeaderProps & { children?: string }> = ({
+  icon,
+  children,
+}) => {
+  const Icon = IconKit[icon];
+
+  return (
+    <header className={cn(styles.pageHeader)}>
+      <Icon width={'1.33em'} height={'1.33em'} />
+
+      {children}
+    </header>
+  );
 };
 
 export default PageHeader;

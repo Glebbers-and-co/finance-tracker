@@ -1,3 +1,20 @@
+@import "src/styles/templates";
+
 header.pageHeader {
+  $br: .4rem;
+
+  @apply flex items-center font-medium select-none
+          bg-secondary-bg text-secondary-font;
+
+  font-size: toLocalEm(24, 20); // 1em = 24px
   grid-column-start: 2;
+  gap: toLocalEm(12, 24);
+  border-radius: $br $br 0 0;
+
+  @include paddingHorizontal(toLocalEm(40, 24));
+  @include paddingVertical(toLocalEm(24, 24));
+
+  svg {
+    @include svgMonofill(currentColor);
+  }
 }
