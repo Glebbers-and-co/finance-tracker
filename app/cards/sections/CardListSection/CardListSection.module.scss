@@ -1,0 +1,23 @@
+@import "src/styles/templates";
+
+section.cardListSection {
+  @apply flex flex-col;
+
+  gap: toLocalEm(16, 20);
+
+  svg {
+    @include svgMonofill(currentColor);
+  }
+
+  header.sectionHeader {
+    @apply flex items-center justify-between;
+
+    gap: toLocalEm(16, 20);
+  }
+
+  article.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}

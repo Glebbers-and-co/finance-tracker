@@ -1,8 +1,8 @@
 import { FC } from 'react';
 
+import CardListSection from '@/app/cards/sections/CardListSection/CardListSection';
 import PageBody from '@/src/components/layout/PageBody/PageBody';
 import PageHeader from '@/src/components/layout/PageHeader/PageHeader';
-import Heading from '@/src/components/ui/Heading/Heading';
 
 const CardsPage: FC = () => {
   return (
@@ -10,7 +10,7 @@ const CardsPage: FC = () => {
       <PageHeader icon={'Card'}>Мои финансы</PageHeader>
 
       <PageBody>
-        <Heading as={'h2'}>Heading 2</Heading>
+        <CardListSection />
       </PageBody>
     </>
   );

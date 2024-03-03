@@ -97,4 +97,31 @@ export namespace IconKit {
       </svg>
     );
   };
+
+  export const Add: VariableFC<'svg'> = ({ ...props }) => {
+    return (
+      <svg
+        width='24'
+        height='24'
+        viewBox='0 0 24 24'
+        fill='none'
+        xmlns='http://www.w3.org/2000/svg'
+        {...props}
+      >
+        <path
+          d='M20.3333 2H3.66667C2.74619 2 2 2.74619 2 3.66667V20.3333C2 21.2538 2.74619 22 3.66667 22H20.3333C21.2538 22 22 21.2538 22 20.3333V3.66667C22 2.74619 21.2538 2 20.3333 2Z'
+          stroke='#04285C'
+          stroke-width='2'
+          stroke-linejoin='round'
+        />
+        <path
+          d='M12 7.55554V16.4444M7.55556 12H16.4444'
+          stroke='#04285C'
+          stroke-width='2'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        />
+      </svg>
+    );
+  };
 }
