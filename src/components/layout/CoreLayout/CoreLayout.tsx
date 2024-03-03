@@ -2,9 +2,9 @@ import { PropsWith } from '@xenopomp/advanced-types';
 import cn from 'classnames';
 import { FC } from 'react';
 
-import bgImage from '@/public/backgrounds/background-simple.png';
 import Header from '@/src/components/layout/Header/Header';
 import BackgroundImage from '@/src/components/ui/BackgroundImage/BackgroundImage';
+import bgImage from '@/src/images/backgrounds/background-simple.png';
 
 import styles from './CoreLayout.module.scss';
 import type { CoreLayoutProps } from './CoreLayout.props';
