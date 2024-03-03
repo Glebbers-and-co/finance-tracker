@@ -1,0 +1,13 @@
+@import "src/styles/templates";
+
+.card {
+  @extend %withAccentBorder;
+  @apply bg-primary-bg flex justify-between items-start gap-[1rem];
+
+  font-size: toLocalEm(16, 20); // 1em = 16px
+
+  @include paddingHorizontal(toLocalEm(24, 16));
+  @include paddingVertical(toLocalEm(16, 16));
+
+  border-radius: toLocalEm(8, 16);
+}

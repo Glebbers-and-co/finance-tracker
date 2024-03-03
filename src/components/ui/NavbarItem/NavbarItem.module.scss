@@ -13,7 +13,7 @@ a.navItem {
   border-style: solid;
 
   &:hover:not(.active) {
-    @apply border-secondary-accent;
+    @extend %withAccentBorder;
   }
 
   &.active {

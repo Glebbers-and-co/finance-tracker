@@ -2,6 +2,7 @@ import { VariableFC } from '@xenopomp/advanced-types';
 import cn from 'classnames';
 
 import { IconKit } from '@/src/components/icons/icon-kit';
+import Card from '@/src/components/ui/Card/Card';
 import Heading from '@/src/components/ui/Heading/Heading';
 import Pressable from '@/src/components/ui/Pressable/Pressable';
 
@@ -23,7 +24,9 @@ const CardListSection: VariableFC<
         </Pressable>
       </header>
 
-      <article className={cn(styles.cardGrid)}>Cards</article>
+      <article className={cn(styles.cardGrid)}>
+        <Card value={1488.5} />
+      </article>
     </section>
   );
 };
