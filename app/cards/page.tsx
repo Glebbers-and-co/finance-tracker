@@ -9,21 +9,7 @@ const CardsPage: FC = () => {
     <>
       <PageHeader icon={'Card'}>Мои финансы</PageHeader>
 
-      <PageBody>
-        <p>Page content here</p>
-        <p>Page content here</p>
-        <p>Page content here</p>
-        <p>Page content here</p>
-        <p>Page content here</p>
-        <p>Page content here</p>
-        <p>Page content here</p>
-        <p>Page content here</p>
-        <p>Page content here</p>
-        <p>Page content here</p>
-        <p>Page content here</p>
-        <p>Page content here</p>
-        <p>Page content here</p>
-      </PageBody>
+      <PageBody>Page content here</PageBody>
     </>
   );
 };

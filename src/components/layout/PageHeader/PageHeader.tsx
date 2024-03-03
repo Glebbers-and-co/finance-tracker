@@ -16,7 +16,7 @@ const PageHeader: FC<PageHeaderProps & { children?: string }> = ({
     <header className={cn(styles.pageHeader)}>
       <Icon width={'1.33em'} height={'1.33em'} />
 
-      {children}
+      <h1>{children}</h1>
     </header>
   );
 };
