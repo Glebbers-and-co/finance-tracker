@@ -1,0 +1,18 @@
+@import "src/styles/templates";
+
+section.reminder {
+  @apply flex flex-col;
+
+  gap: toLocalEm(16, 20);
+
+  article.message {
+    @extend %fancyCard;
+
+    font-size: toLocalEm(16, 20); // 1em = 16px
+
+    @include paddingVertical(toLocalEm(16, 16));
+    @include paddingHorizontal(toLocalEm(24, 16));
+
+    border-radius: toLocalEm(8, 16);
+  }
+}

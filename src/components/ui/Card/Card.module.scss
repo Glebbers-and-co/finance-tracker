@@ -1,7 +1,7 @@
 @import "src/styles/templates";
 
 .card {
-  @extend %withAccentBorder;
+  @extend %fancyCard;
   @apply bg-primary-bg flex justify-between items-start gap-[1rem];
 
   font-size: toLocalEm(16, 20); // 1em = 16px
