@@ -4,6 +4,7 @@ import { FC } from 'react';
 
 import Header from '@/src/components/layout/Header/Header';
 import BackgroundImage from '@/src/components/ui/BackgroundImage/BackgroundImage';
+import UiGrid from '@/src/components/ui/UiGrid/UiGrid';
 import bgImage from '@/src/images/backgrounds/image 2.svg';
 
 import styles from './CoreLayout.module.scss';
@@ -45,7 +46,16 @@ const CoreLayout: FC<PropsWith<'children', CoreLayoutProps>> = ({
 
       <Header />
 
-      {children}
+      <UiGrid
+        as={'main'}
+        style={{
+          gridTemplateColumns: '1fr var(--cols-resolution) 1fr',
+          gridTemplateRows: 'max-content 1fr',
+          gridRowGap: 0,
+        }}
+      >
+        {children}
+      </UiGrid>
 
       {/*<Footer />*/}
     </div>

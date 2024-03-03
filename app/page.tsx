@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-import UiContainer from '@/src/components/ui/UiContainer/UiContainer';
+import PageHeader from '@/src/components/layout/PageHeader/PageHeader';
 import { generateStaticMetadata } from '@/src/utils/seo';
 
 export const metadata: Metadata = generateStaticMetadata({
@@ -9,8 +9,8 @@ export const metadata: Metadata = generateStaticMetadata({
 
 export default function Home() {
   return (
-    <main>
-      <UiContainer>index page</UiContainer>
-    </main>
+    <>
+      <PageHeader />
+    </>
   );
 }

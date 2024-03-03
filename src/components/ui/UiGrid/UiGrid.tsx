@@ -37,10 +37,16 @@ const UiGrid: FC<UiGridNestedProps> = ({
     <UiContainer
       className={cn(className)}
       id={id}
-      style={{
-        ...getInlineStyles({ columns, rows, gap }),
-        ...style,
-      }}
+      style={
+        {
+          ...getInlineStyles({ columns, rows, gap }),
+
+          // Provide column count via variables
+          '--cols-resolution': `${columns}fr`,
+
+          ...style,
+        } as CSSProperties
+      }
       margin={margin}
       {...props}
     >
