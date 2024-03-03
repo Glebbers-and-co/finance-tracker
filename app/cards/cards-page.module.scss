@@ -1,0 +1,11 @@
+@import "src/styles/templates";
+
+.body {
+  @apply flex flex-col;
+
+  gap: toLocalEm(24, 20);
+
+  @include endAtFixed($mobileBreakpoint) {
+    gap: toLocalEm(16, 20);
+  }
+}

@@ -7,6 +7,8 @@ import PageBody from '@/src/components/layout/PageBody/PageBody';
 import PageHeader from '@/src/components/layout/PageHeader/PageHeader';
 import { generateStaticMetadata } from '@/src/utils/seo';
 
+import styles from './cards-page.module.scss';
+
 export async function generateMetadata(): Promise<Metadata> {
   return generateStaticMetadata({
     title: 'Карты',
@@ -18,7 +20,7 @@ const CardsPage: FC = () => {
     <>
       <PageHeader icon={'Card'}>Мои финансы</PageHeader>
 
-      <PageBody>
+      <PageBody className={cn(styles.body)}>
         <CardListSection />
       </PageBody>
     </>
