@@ -1,0 +1,7 @@
+@import "src/styles/templates";
+
+.grid {
+  @include endAtFixed($mobileBreakpoint) {
+    --cols-count: 6 !important;
+  }
+}
