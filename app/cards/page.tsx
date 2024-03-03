@@ -1,4 +1,3 @@
-import cn from 'classnames';
 import { FC } from 'react';
 
 import PageBody from '@/src/components/layout/PageBody/PageBody';
