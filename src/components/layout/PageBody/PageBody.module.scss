@@ -15,6 +15,10 @@
 
   @include paddingVertical(toLocalEm(32, 20));
 
+  @include endAtFixed($mobileBreakpoint) {
+    grid-column: 1 / span var(--cols-count);
+  }
+
   .scrollable {
     @extend %scrollable;
 
