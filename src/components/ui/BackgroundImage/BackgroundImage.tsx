@@ -11,6 +11,8 @@ import { BackgroundImageProps } from './BackgroundImage.props';
  *
  * @param className
  * @param objectFit
+ * @param style
+ * @param alt
  * @param props
  * @constructor
  */
@@ -18,15 +20,16 @@ const BackgroundImage: VariableFC<
   typeof Image,
   BackgroundImageProps,
   'children'
-> = ({ className, objectFit = 'cover', style, ...props }) => {
+> = ({ className, objectFit = 'cover', style, alt, ...props }) => {
   return (
     <Image
       className={cn('z-[-2]', className)}
-      {...props}
+      alt={alt}
       style={{
         objectFit,
         ...style,
       }}
+      {...props}
     />
   );
 };
