@@ -10,8 +10,11 @@ const PageBody: VariableFC<'div', PageBodyProps> = ({
   ...props
 }) => {
   return (
-    <div className={cn(styles.pageBody, className)} {...props}>
-      <div className={cn(styles.scrollable, 'pr-[1rem] -mr-[1rem]')}>
+    <div className={cn(styles.pageBody)}>
+      <div
+        className={cn(styles.scrollable, className, 'pr-[1rem] -mr-[1rem]')}
+        {...props}
+      >
         {children}
       </div>
     </div>
