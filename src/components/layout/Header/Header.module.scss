@@ -25,6 +25,10 @@ header.appHeader {
       display: none;
     }
 
+    button.burger {
+      display: none;
+    }
+
     @include endAtFixed($mobileBreakpoint) {
       --margin: 0 !important;
 
@@ -37,8 +41,24 @@ header.appHeader {
       border-right: none;
       border-top: none;
 
-      .separator {
+      .separator, button.burger {
         display: block;
+      }
+
+      section.main {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+
+        nav.appNav {
+          @apply mt-[.5em];
+
+          grid-row: 2 / span 1;
+          grid-column: span 2;
+        }
+
+        .logo {
+          @apply justify-end inline-flex ml-auto;
+        }
       }
     }
   }

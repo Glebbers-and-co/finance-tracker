@@ -6,14 +6,42 @@ nav.appNav {
   ul {
     gap: toLocalEm(24, 16);
 
+    @include endAtFixed($mobileBreakpoint) {
+      @apply flex-col justify-start;
+
+      gap: toLocalEm(8, 16);
+    }
+
     li a {
       @apply flex-center;
+
+      @include endAtFixed($mobileBreakpoint) {
+        @apply justify-start;
+      }
 
       gap: toLocalEm(8, 16);
 
       svg {
         @include svgMonofill(currentColor);
       }
+    }
+  }
+
+  @include endAtFixed($mobileBreakpoint) {
+    $transition: .15s ease;
+
+    opacity: 0;
+    height: 0;
+    pointer-events: none;
+
+    transform-origin: top;
+    transition: $transition height,
+                $transition opacity;
+
+    &.expanded {
+      height: 100%;
+      opacity: 1;
+      pointer-events: all;
     }
   }
 }
