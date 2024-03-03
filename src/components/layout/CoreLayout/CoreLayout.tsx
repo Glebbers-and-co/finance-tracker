@@ -32,7 +32,9 @@ const CoreLayout: FC<PropsWith<'children', CoreLayoutProps>> = ({
   return (
     <div className={cn(styles.layoutWrapper)}>
       <BackgroundImage
-        className={cn('absolute top-0 left-0 w-full h-full select-none')}
+        className={cn(
+          'absolute top-0 left-0 w-full h-full select-none pointer-events-none',
+        )}
         src={bgImage}
         alt={'Background'}
         style={{
