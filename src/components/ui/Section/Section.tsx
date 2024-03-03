@@ -1,10 +1,7 @@
 import { VariableFC } from '@xenopomp/advanced-types';
 import cn from 'classnames';
-import { FC } from 'react';
 
-import { IconKit } from '@/src/components/icons/icon-kit';
 import Heading from '@/src/components/ui/Heading/Heading';
-import Pressable from '@/src/components/ui/Pressable/Pressable';
 
 import styles from './Section.module.scss';
 import { SectionProps } from './Section.props';
