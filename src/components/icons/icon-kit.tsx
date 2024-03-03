@@ -124,4 +124,58 @@ export namespace IconKit {
       </svg>
     );
   };
+
+  export const BurgerHidden: VariableFC<'svg'> = ({ ...props }) => {
+    return (
+      <svg
+        width='32'
+        height='32'
+        viewBox='0 0 32 32'
+        fill='none'
+        xmlns='http://www.w3.org/2000/svg'
+        {...props}
+      >
+        <rect width='28' height='2' transform='translate(2 9)' fill='#04285C' />
+        <rect
+          width='28'
+          height='2'
+          transform='translate(2 15)'
+          fill='#04285C'
+        />
+        <rect
+          width='28'
+          height='2'
+          transform='translate(2 21)'
+          fill='#04285C'
+        />
+      </svg>
+    );
+  };
+
+  export const BurgerShown: VariableFC<'svg'> = ({ ...props }) => {
+    return (
+      <svg
+        width='32'
+        height='32'
+        viewBox='0 0 32 32'
+        fill='none'
+        xmlns='http://www.w3.org/2000/svg'
+        {...props}
+      >
+        <rect width='28' height='2' transform='translate(2 9)' fill='#04285C' />
+        <rect
+          width='20'
+          height='2'
+          transform='translate(2 15)'
+          fill='#04285C'
+        />
+        <rect
+          width='12'
+          height='2'
+          transform='translate(2 21)'
+          fill='#04285C'
+        />
+      </svg>
+    );
+  };
 }

@@ -20,7 +20,7 @@ export async function generateMetadata(): Promise<Metadata> {
       template: `%s | ${AppConstants.appName}`,
       default: AppConstants.appName,
     },
-    description: 'Приложения для отслеживания затрат.',
+    description: 'Приложение для отслеживания затрат.',
     appleWebApp: {
       title: AppConstants.appName,
       capable: false,

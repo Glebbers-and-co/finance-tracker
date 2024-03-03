@@ -14,4 +14,8 @@
   main {
     overflow: hidden;
   }
+
+  @include endAtFixed($mobileBreakpoint) {
+    padding-top: 0;
+  }
 }
