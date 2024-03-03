@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import { FC } from 'react';
 
 import PageBody from '@/src/components/layout/PageBody/PageBody';
@@ -8,7 +9,21 @@ const CardsPage: FC = () => {
     <>
       <PageHeader icon={'Card'}>Мои финансы</PageHeader>
 
-      <PageBody>Page content here</PageBody>
+      <PageBody>
+        <p>Page content here</p>
+        <p>Page content here</p>
+        <p>Page content here</p>
+        <p>Page content here</p>
+        <p>Page content here</p>
+        <p>Page content here</p>
+        <p>Page content here</p>
+        <p>Page content here</p>
+        <p>Page content here</p>
+        <p>Page content here</p>
+        <p>Page content here</p>
+        <p>Page content here</p>
+        <p>Page content here</p>
+      </PageBody>
     </>
   );
 };
