@@ -11,9 +11,9 @@ export const metadata: Metadata = generateStaticMetadata({
 export default function Home() {
   return (
     <>
-      <PageHeader icon={'Card'}>Мои финансы</PageHeader>
+      <PageHeader icon={'Elephant'}>Главная страница</PageHeader>
 
-      <PageBody>Page content here</PageBody>
+      <PageBody>Main page</PageBody>
     </>
   );
 }

@@ -14,5 +14,9 @@ export default function sitemap(): Sitemap {
       changeFrequency: 'always',
       priority: 1,
     },
+    {
+      url: `${CANONICAL}/cards`,
+      priority: 1,
+    },
   ];
 }
