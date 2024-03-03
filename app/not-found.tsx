@@ -16,7 +16,7 @@ const NotFoundPage: FC = () => {
     <>
       <PageHeader icon={'Error'}>Страница не найдена</PageHeader>
 
-      <PageBody>Ошибка 404s</PageBody>
+      <PageBody>Ошибка 404</PageBody>
     </>
   );
 };
