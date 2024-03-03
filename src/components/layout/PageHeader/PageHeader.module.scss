@@ -18,4 +18,11 @@ header.pageHeader {
   svg {
     @include svgMonofill(currentColor);
   }
+
+  @include endAtFixed($mobileBreakpoint) {
+    grid-column: 1 / span var(--cols-count);
+
+    @include paddingHorizontal(toLocalEm(16, 24));
+    @include paddingVertical(toLocalEm(24, 24));
+  }
 }

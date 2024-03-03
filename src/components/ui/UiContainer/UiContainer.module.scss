@@ -5,4 +5,8 @@
 
   width: min(var(--max-container-width), calc(100% - 2 * var(--margin)));
   margin: 0 auto;
+
+  @include endAtFixed($mobileBreakpoint) {
+    --margin: 1rem !important;
+  }
 }
