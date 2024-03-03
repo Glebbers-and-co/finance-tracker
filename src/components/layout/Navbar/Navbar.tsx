@@ -30,11 +30,11 @@ const Navbar: VariableFC<'nav', NavbarProps, 'children'> = ({
           </NavbarItem>
         </li>
 
-        <li>
-          <NavbarItem href={'/window'}>
-            <IconKit.Elephant /> Окно
-          </NavbarItem>
-        </li>
+        {/*<li>*/}
+        {/*  <NavbarItem href={'/window'}>*/}
+        {/*    <IconKit.Elephant /> Окно*/}
+        {/*  </NavbarItem>*/}
+        {/*</li>*/}
       </ul>
     </nav>
   );

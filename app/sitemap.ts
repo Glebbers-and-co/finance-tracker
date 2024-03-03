@@ -16,7 +16,11 @@ export default function sitemap(): Sitemap {
     },
     {
       url: `${CANONICAL}/cards`,
-      priority: 1,
+      priority: 0.9,
+    },
+    {
+      url: `${CANONICAL}/history`,
+      priority: 0.9,
     },
   ];
 }
