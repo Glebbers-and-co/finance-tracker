@@ -46,7 +46,7 @@ export default function RootLayout({
     <html lang='ru'>
       <body className={mainFont.className}>
         <Providers>
-          <CoreLayout>{children}</CoreLayout>
+          <>{children}</>
         </Providers>
       </body>
     </html>

@@ -1,6 +1,7 @@
 import cn from 'classnames';
 import { Metadata } from 'next';
 
+import CoreLayout from '@/src/components/layout/CoreLayout/CoreLayout';
 import UiContainer from '@/src/components/ui/UiContainer/UiContainer';
 import { generateStaticMetadata } from '@/src/utils/seo';
 
@@ -12,8 +13,10 @@ export const metadata: Metadata = generateStaticMetadata({
 
 export default function Home() {
   return (
-    <main className={cn(styles.mainPage)}>
-      <UiContainer>index page</UiContainer>
-    </main>
+    <CoreLayout>
+      <main className={cn(styles.mainPage)}>
+        <UiContainer>index page</UiContainer>
+      </main>
+    </CoreLayout>
   );
 }
